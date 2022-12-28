@@ -45,6 +45,7 @@ public class EmplyeeController {
 	@GetMapping("/getAllEmployeeDetails")
 	public ResponseEntity<List<Employee>> getAllEmployeeDetails() {
 		List<Employee> allEmployeeDetails = employeeService.getAllEmployeeDetails();
+		System.out.println("");
 		return new ResponseEntity<List<Employee>>(allEmployeeDetails, HttpStatus.OK);
 	}
 

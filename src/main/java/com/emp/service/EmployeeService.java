@@ -17,6 +17,7 @@ public class EmployeeService {
 	public EmployeeDao employeeDao;
 
 	public void addEmployeeDetail(Employee employee) {
+		System.out.println("");
 		employeeDao.save(employee);
 	}
 
