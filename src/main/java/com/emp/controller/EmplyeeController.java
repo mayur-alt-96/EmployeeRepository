@@ -26,7 +26,8 @@ public class EmplyeeController {
 
 	@PostMapping("/addEmployeeDetail")
 	public String addEmployeeDetail(@Valid @RequestBody Employee employee) {
-		employeeService.addEmployeeDetail(employee);
+		employeeService.addEmployeeDetail(employee); 
+		
 		return "Insert detail successfully";
 	}
 
